@@ -210,7 +210,7 @@ h1 img{
 h1 span:nth-child(2){ grid-area:title1; }
 h1 span:nth-child(3){ grid-area:title2; }
 
-#game{
+/*#game{
     display:grid;
     grid-template-columns:1fr 2fr 1fr;
     grid-template-rows:2fr 1fr 1fr;
@@ -235,4 +235,18 @@ h1 span:nth-child(3){ grid-area:title2; }
 
 #game img:nth-of-type(1){
     grid-row:2;
+}*/
+
+#game{
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
 }
+
+#game img:nth-of-type(1){ grid-column:1; grid-row:8; }
+#game img:nth-of-type(2){ grid-column:7; grid-row:7; }
+#game img:nth-of-type(3){ grid-column:4; grid-row:6; }
+#game img:nth-of-type(4){ grid-column:2; grid-row:5; }
+#game img:nth-of-type(5){ grid-column:5; grid-row:4; }
+#game img:nth-of-type(6){ grid-column:7; grid-row:3; }
+#game img:nth-of-type(7){ grid-column:3; grid-row:2; }
+#game img:nth-of-type(8){ grid-column:1; grid-row:1; }
